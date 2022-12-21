@@ -3,7 +3,7 @@
 # created by Katsuki Chousa <katsuki.chousa.bg at hco.ntt.co.jp>
 # updated on Dec. 22, 2020 by Katsuki Chousa <katsuki.chousa.bg at hco.ntt.co.jp>
 
-PROJECT_DIR=/content/spanalign
+PROJECT_DIR=/content/nlp_test
 EXPERIMENT_DIR=$PROJECT_DIR/experiments
 OUTPUT_DIR=$EXPERIMENT_DIR/finetuning
 

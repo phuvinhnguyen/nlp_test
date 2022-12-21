@@ -18,7 +18,7 @@ from collections import namedtuple, defaultdict
 from statistics import mean
 from typing import List
 
-CPLEX_PATH = "/content/spanalign"
+CPLEX_PATH = "/content/nlp_test"
 
 
 def edit_distance(s1, s2):
