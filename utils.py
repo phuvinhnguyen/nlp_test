@@ -267,7 +267,7 @@ class CacheDataReader():
                               ]
 
     def __del__(self):
-        self.cache_data.close()
+        self.cache_data.quit()
 
         s = super()
         if hasattr(s, "__del__"):
