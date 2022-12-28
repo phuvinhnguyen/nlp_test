@@ -3,6 +3,7 @@
 from functools import partial
 from multiprocessing import Pool, cpu_count
 
+import time
 import os
 import logging
 import json
@@ -267,7 +268,11 @@ class CacheDataReader():
                               ]
 
     def __del__(self):
-        self.cache_data.quit()
+        try:
+            self.cache_data.close()
+            time.sleep(1)
+        except:
+            pass
 
         s = super()
         if hasattr(s, "__del__"):
