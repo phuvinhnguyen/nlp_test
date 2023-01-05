@@ -18,7 +18,7 @@ from collections import namedtuple, defaultdict
 from statistics import mean
 from typing import List
 
-CPLEX_PATH = "/content/cplex/CPLEX_Studio128/cplex/bin/x86-64_linux"
+CPLEX_PATH = "/content/cplex/CPLEX_Studio128/cplex/bin/x86-64_linux/cplex"
 
 
 def edit_distance(s1, s2):
@@ -342,6 +342,6 @@ def parse_args():
 
 if __name__ == '__main__':
     config = parse_args()
-
+    print(config.output)
     print(config.title)
     main(config)
