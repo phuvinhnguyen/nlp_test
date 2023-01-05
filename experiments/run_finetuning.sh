@@ -32,7 +32,7 @@ python $PROJECT_DIR/run_qa_alignment.py \
     --predict_file $DEV_FILE \
     --learning_rate 3e-5 \
     --per_gpu_train_batch_size 5 \
-    --num_train_epochs 5 \
+    --num_train_epochs 100 \
     --max_seq_length 384 \
     --max_query_length 158 \
     --max_answer_length 158 \
