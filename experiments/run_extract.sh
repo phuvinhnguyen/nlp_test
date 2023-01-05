@@ -50,7 +50,8 @@ fi
 
 python $PROJECT_DIR/scripts/get_sent_align_for_overlap.py \
     --nbest 1 \
-    $DATA_DIR/sample.{l1,l2} \
+    $DATA_DIR/sample.l1 \
+    $DATA_DIR/sample.l2 \
     $output_dir/nbest_predictions_.json \
     $test_title \
     $output_dir/$test_prefix \
